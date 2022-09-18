@@ -1,0 +1,15 @@
+antigen use oh-my-zsh
+
+antigen bundle command-not-found
+antigen bundle extract
+antigen bundle sudo
+antigen bundle z
+
+antigen bundle zsh-users/zsh-completions
+antigen bundle zsh-users/zsh-autosuggestions
+
+antigen theme spaceship-prompt/spaceship-prompt
+
+antigen bundle zsh-users/zsh-syntax-highlighting
+
+antigen apply

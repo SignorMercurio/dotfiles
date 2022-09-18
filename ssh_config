@@ -1,0 +1,23 @@
+Include ~/.ssh/config_local
+
+Host *
+    Protocol 2
+    Compression yes
+    ServerAliveCountMax 5
+    ServerAliveInterval 30
+    IdentitiesOnly yes
+    ForwardAgent no
+
+ControlMaster auto
+ControlPath ~/.ssh/.control.%C
+
+Host github.com
+  HostName github.com
+  User git
+  IdentityFile ~/.ssh/git
+  ProxyCommand nc -x wizard:7890 %h %p
+
+Host ninja
+  HostName ninja
+  User merc
+  IdentityFile ~/.ssh/git
