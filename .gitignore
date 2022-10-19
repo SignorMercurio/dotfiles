@@ -4,3 +4,4 @@ config/configstore
 config/yarn
 config/gh
 .DS_Store
+*.zwc
