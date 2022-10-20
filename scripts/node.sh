@@ -6,7 +6,7 @@ sudo bash n lts
 rm n
 noproxy
 
-sudo chown -R $(whoami) /usr/local/bin /usr/local/lib /usr/local/include /usr/local/share
+sudo chown -R "$(whoami)" /usr/local/bin /usr/local/lib /usr/local/include /usr/local/share
 
 npm i -g n
 
