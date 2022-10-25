@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 
+shopt -s expand_aliases
 source ~/.shell/aliases.sh
 
 SCRIPTS=~/.dotfiles/scripts

@@ -2,8 +2,9 @@
 
 # proxy
 proxy_addr=wizard:7890
-alias proxytmp='https_proxy=http://$proxy_addr http_proxy=http://$proxy_addr all_proxy=socks5://$proxy_addr'
-alias proxy="export $proxytmp"
+proxy_set="https_proxy=http://$proxy_addr http_proxy=http://$proxy_addr all_proxy=socks5://$proxy_addr"
+alias proxytmp='$proxy_set'
+alias proxy='export $proxy_set'
 alias noproxy="export https_proxy= http_proxy= all_proxy="
 
 # git
