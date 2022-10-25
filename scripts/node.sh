@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+shopt -s expand_aliases
+source ~/.shell/aliases.sh
+
 proxy
 curl -L https://raw.githubusercontent.com/tj/n/master/bin/n -o n
 sudo bash n lts
