@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+source ~/.shell/aliases.sh
+
 SCRIPTS=~/.dotfiles/scripts
 
 $SCRIPTS/basic.sh

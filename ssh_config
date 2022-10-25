@@ -16,3 +16,8 @@ Host github.com
   User git
   IdentityFile ~/.ssh/git
   ProxyCommand nc -x wizard:7890 %h %p
+
+Host samurai
+  HostName samurai
+  User merc
+  IdentityFile ~/.ssh/git
