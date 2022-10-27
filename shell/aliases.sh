@@ -20,5 +20,3 @@ alias gb="git branch"
 alias gst="git stash"
 alias gstp="git stash pop"
 
-# docker
-alias docker="sudo docker"
