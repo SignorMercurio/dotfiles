@@ -17,7 +17,13 @@ Host github.com
   IdentityFile ~/.ssh/git
   ProxyCommand nc -x wizard:7890 %h %p
 
-Host samurai
-  HostName samurai
+Host ninja 
+  HostName ninja
   User merc
   IdentityFile ~/.ssh/git
+
+Host gitea
+  HostName ninja.tailnet-48a5.ts.net
+  Port 2222
+  User git
+  IdentityFile ~/.ssh/gitea

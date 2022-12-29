@@ -8,7 +8,7 @@ sudo apt-get update
 sudo apt-get upgrade -y
 sudo apt-get install -y net-tools zsh tree gcc make shellcheck jq gh
 sudo apt-get install -y libbtrfs-dev pkg-config libdevmapper-dev libgpgme-dev
-
+sudo apt-get install -y ca-certificates curl gnupg lsb-release
 # change shell
 sudo chsh -s "$(which zsh)" "$(whoami)"
 
