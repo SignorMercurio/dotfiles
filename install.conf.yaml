@@ -3,21 +3,17 @@
       create: true
       relink: true
 
-- clean: ['~']
+- clean: ["~"]
 
 - link:
-    ~/.config: 
-    ~/.shell: 
-    ~/.gitconfig: 
-    ~/.npmrc: 
+    ~/.config:
+    ~/.shell:
+    ~/.gitconfig:
+    ~/.npmrc:
     ~/.ssh/config: ssh_config
-    ~/.tmux.conf: 
-    ~/.vimrc: 
-    ~/.yarnrc: 
-    ~/.zshrc: 
+    ~/.tmux.conf:
+    ~/.vimrc:
+    ~/.zshrc:
 
 - shell:
-  - [git submodule update --init --recursive, Installing submodules]
-  - command: ~/.dotfiles/scripts/all.sh
-    stdout: true
-    description: Preparing dev environment
+    - [git submodule update --init --recursive, Installing submodules]
